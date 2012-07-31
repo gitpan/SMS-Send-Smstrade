@@ -13,11 +13,11 @@ SMS::Send::Smstrade - An SMS::Send driver for the smstrade.de service
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
@@ -64,6 +64,7 @@ Using this driver will cost you money. B<YOU HAVE BEEN WARNED>
 
     # Create new sender using this driver.
     my $sender = SMS::Send::->new(
+        'Smstrade',
         _apikey => '123',
         _route  => 'basic',
     );

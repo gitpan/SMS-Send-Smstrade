@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               SMS-Send-Smstrade
-version:            0.01
+version:            0.02
 abstract:           An SMS::Send driver for the smstrade.de service
 author:
     - Dominik Schulz <dominik.schulz@gauner.org>
@@ -12,6 +12,7 @@ build_requires:
     ExtUtils::MakeMaker:  0
 requires:
     LWP::UserAgent:  0
+    SMS::Send:       0.02
     Test::More:      0
     URI::Escape:     0
 no_index:
