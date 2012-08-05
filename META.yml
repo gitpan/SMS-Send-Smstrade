@@ -1,25 +1,25 @@
---- #YAML:1.0
-name:               SMS-Send-Smstrade
-version:            0.02
-abstract:           An SMS::Send driver for the smstrade.de service
+---
+abstract: 'A SMS::Send driver for smstrade.de'
 author:
-    - Dominik Schulz <dominik.schulz@gauner.org>
-license:            perl
-distribution_type:  module
-configure_requires:
-    ExtUtils::MakeMaker:  0
+  - 'Dominik Schulz <dominik.schulz@gauner.org>'
 build_requires:
-    ExtUtils::MakeMaker:  0
-requires:
-    LWP::UserAgent:  0
-    SMS::Send:       0.02
-    Test::More:      0
-    URI::Escape:     0
-no_index:
-    directory:
-        - t
-        - inc
-generated_by:       ExtUtils::MakeMaker version 6.55_02
+  English: 0
+  File::Spec: 0
+  Test::Kwalitee: 0
+  Test::More: 0
+  Test::Perl::Critic: 0
+configure_requires:
+  ExtUtils::MakeMaker: 6.31
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670'
+license: perl
 meta-spec:
-    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
-    version:  1.4
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: SMS-Send-Smstrade
+requires:
+  LWP::UserAgent: 0
+  SMS::Send::Driver: 0
+  URI::Escape: 0
+  parent: 0
+version: 0.03

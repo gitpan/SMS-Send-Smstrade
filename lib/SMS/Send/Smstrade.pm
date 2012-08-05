@@ -1,7 +1,12 @@
 package SMS::Send::Smstrade;
+BEGIN {
+  $SMS::Send::Smstrade::VERSION = '0.03';
+}
+# ABSTRACT: A SMS::Send driver for smstrade.de
 
-use warnings;
 use strict;
+use warnings;
+
 use LWP::UserAgent;
 use URI::Escape;
 
@@ -9,16 +14,11 @@ use parent qw(SMS::Send::Driver);
 
 =head1 NAME
 
-SMS::Send::Smstrade - An SMS::Send driver for the smstrade.de service
+SMS::Send::Smstrade - A SMS::Send driver for the smstrade.de service
 
 =head1 VERSION
 
-Version 0.02
-
-=cut
-
-our $VERSION = '0.02';
-
+version 0.03
 
 =head1 SYNOPSIS
 
